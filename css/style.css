@@ -1,0 +1,332 @@
+
+
+body{
+	margin:0px auto;
+	background-color:#999;
+}
+.wrapper{
+	height:1930px;
+	width:1263px;
+	background-color:#000000;
+	margin:0px auto;
+}
+.header{
+	height:100px;
+	width:100%;
+	background-color:#cc0000;
+	margin:0px auto;
+}
+.container{
+	height:90px;
+	width:80%;
+	background-color:#cc0000;
+	margin-left:10%;
+}
+.b1 img{
+	height:55px;
+	width:8%;
+	margin-top:20px;
+	margin-bottom:-8px;	
+}
+.nav{
+	height:40px;
+	width:100%;
+	background-color:#99001a;
+} 
+.box1{
+	height:40px;
+	width:95%;
+	margin-left:2.5%;
+	background-color:#99001a;
+}
+.box1 ul{
+	margin:0;
+	padding:20;
+	list-style:none;
+	position:relative;
+}
+.box1 ul li a{
+	display:block;
+	padding:8px;
+	color:#fff;
+	text-decoration:none;
+	width:95%;
+	font-size:18px;
+	margin-top:4px;
+	margin-right:20px;;
+}
+.box1 ul:after{
+	content: ""; 
+	clear:both;
+	display:block;
+}
+.box1 ul li{
+	float:left;
+	list-style:none;
+}
+.box1 ul ul{
+	display:none;
+}
+.box1 ul li:hover > ul{
+	display:block;
+}
+.box1 ul li:hover{
+	background:#000;
+	transition:0.9s;
+	visibility:visible;
+	z-index:100;
+}
+.box1 ul li:hover a{
+	color:#fff;
+}
+.box1 ul ul{
+	background:#99001a;
+	padding:0;
+	margin:0;
+	position:absolute; top:100%;
+    z-index:100;
+}
+.box1 ul ul li{
+	float:none;
+	position:relative;
+}
+.box1 ul ul li a{
+	padding:10px;
+	color:#fff;
+	text-align:left;
+	margin-top:0.2px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1100px;
+  max-height:1000%;
+  position: relative;
+  margin: auto;
+  padding-top:40px;
+  
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.mainbox{
+	height: 300px;
+	width: 89%;
+	margin-left: 5%;
+	margin-top: 0.5%;
+	position:inherit;
+}
+.fbox1{
+    height: 300px;
+	width: 60%;
+	position: relative;
+	float: left;
+	margin-left:0.5%; 
+	background-color:#fff;
+}
+.fbox2{
+    height: 300px;
+	width: 37%;
+	position: relative;
+	float: left;
+	margin-left:2%; 
+	background-color:#fff;
+}
+.fbox3{
+    height: 300px;
+	width: 32.4%;
+	position: relative;
+	float: left;
+	margin-left:2%; 
+	background-color:#000;
+	margin:5px;
+}
+.mainbox .fbox1{
+	position:relative;
+	overflow:hidden;
+}
+.mainbox .fbox1 img{
+	max-width:100%;
+	transition: transform 2s;
+}
+.mainbox .fbox1:hover img{
+	transform:scale(2,2);
+}
+.mainbox .fbox2{
+	position:relative;
+	overflow:hidden;
+}
+.mainbox .fbox2 img{
+	max-width:100%;
+	transition: transform 2s;
+}
+.mainbox .fbox2:hover img{
+	transform:scaleY(1.3);
+}
+.mainbox .fbox3{
+	position:relative;
+	overflow:hidden;
+}
+.mainbox .fbox3 img{
+	max-width:100%;
+	transition: transform 2s;
+}
+.mainbox .fbox3:hover img{
+	transform:scaleY(1.1);
+}
+
+
+.footer{
+	background-color:#333;
+	width:1263px;
+	height:145px;
+	text-align:center;
+	margin-top:30%;
+}
+.fobox1{
+	height:28px;
+	width:100%;
+	background-color:#333;
+}
+.ffbox{
+	height:45px;
+	width:60%;
+	margin-left:20%;
+	background-color:#333;
+}
+.fobox2{
+	height:35px;
+	width:100%;
+	margin-top:5px;
+	background-color:#333;
+}
+.fobox3{
+	height:50px;
+	width:100%;
+	margin-top:5px;
+	background-color:#333;
+}
+.but1{
+	color:#fff;
+	font-size:15px;
+	padding-left:10px;
+	font-style:italic;
+}
+.but1:hover{
+	color:#000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đặt Hàng</title>
+    <!-- Thêm các thư viện CSS và JavaScript cần thiết -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Trang Đặt Hàng</h1>
+        <!-- Thanh tìm kiếm -->
+        <input type="text" id="search" placeholder="Tìm kiếm...">
+    </header>
+
+    <main>
+        <!-- Nội dung trang order -->
+        <!-- Ví dụ: sản phẩm 1 -->
+        <div class="product">
+            <h2>vhfbfbvjfbfjbvjfbvujjjjjjjjjj</h2>
+            <p>Giá: $10.00</p>
+            <button onclick="addToCart()">Thêm vào giỏ hàng</button>
+            <input type="number" id="quantity" value="1" min="1">
+        </div>
+
+        <!-- Các sản phẩm khác có thể thêm vào đây -->
+
+    </main>
+
+    <aside>
+        <!-- Giỏ hàng -->
+        <h2>Giỏ Hàng</h2>
+        <ul id="cart">
+            <!-- Các sản phẩm trong giỏ hàng sẽ được hiển thị ở đây -->
+        </ul>
+    </aside>
+</body>
+</html>
+<script>
+    // Đối tượng giỏ hàng
+var cart = [];
+
+// Hàm thêm sản phẩm vào giỏ hàng
+function addToCart() {
+    var productName = document.querySelector('.product h2').innerText;
+    var productPrice = parseFloat(document.querySelector('.product p').innerText.replace('$', ''));
+    var quantity = parseInt(document.getElementById('quantity').value);
+    var totalPrice = productPrice * quantity;
+
+    var product = {
+        name: productName,
+        price: productPrice,
+        quantity: quantity,
+        total: totalPrice
+    };
+
+    addToCartArray(product);
+    updateCartUI();
+}
+
+// Hàm thêm sản phẩm vào giỏ hàng (đối tượng cart)
+function addToCartArray(product) {
+    cart.push(product);
+}
+
+// Hàm xóa sản phẩm khỏi giỏ hàng
+function removeFromCart(index) {
+    cart.splice(index, 1);
+    updateCartUI();
+}
+
+// Hàm cập nhật giao diện giỏ hàng
+function updateCartUI() {
+    var cartList = document.getElementById('cart');
+    cartList.innerHTML = '';
+
+    // Hiển thị danh sách sản phẩm trong giỏ hàng
+    cart.forEach(function (product, index) {
+        var li = document.createElement('li');
+        li.innerHTML = `${product.name} x${product.quantity} - $${product.total.toFixed(2)} 
+                        <button class="delete" onclick="removeFromCart(${index})">Xóa</button>`;
+        cartList.appendChild(li);
+    });
+}
+
+</script>

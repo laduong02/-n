@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shale pizzazzz</title>
+<link rel="stylesheet" href="../css/style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.truck{
+	margin:50px auto;
+	width:800px;
+}
+.imagebox{
+	position:relative;
+	overflow:hidden;
+}
+.imagebox img{
+	width:100%;
+	height:100%;
+}
+.textbox{
+	position:absolute;
+	top:0;
+	left:100%;
+	width:100%;
+	height:100%;
+	background:#99001a;
+	transition:.5s;
+}
+.textbox h1{
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:50%;
+	left:47.8%;
+	transform:translateX(-50%) translateY(-50%);
+	color:#fff;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+.imagebox:hover .textbox{
+	left:0%;
+}
+.imagebox:hover img{
+	transform:scale(1,1);
+}
+
+	
+.card{
+	transform:translate(-50%,-50%);
+	width:350px;
+	height:350px;
+	background:#99001a;
+	overflow:hidden;
+	margin-left:255px;
+	margin-top:230px;
+}
+.card .imgbx,
+.card .deta{
+	width:100%;
+	height:100%;
+	position:absolute;
+	box-sizing:border-box;
+	transition:.5s;
+}
+.card .imgbx{
+	top:0;
+	left:0;
+}
+.card:hover .imgbx{
+	top:0;
+	left:-100%;
+}
+.card .imgbx img{
+	width:100%;
+	height:350px;
+}
+.card .deta{
+	background:#99001a;
+	top:0;
+	left:100%;
+	padding:15px 20px;
+}
+.card:hover .deta{
+	top:0;
+	left:0;
+}
+.card .deta h1{
+	color:#fff;
+	text-align:center;
+	margin:0;
+	padding:0 0 5px;
+	border-bottom:2px solid #fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:28px;
+}
+.card .deta p{
+	margin:20px 0 0;
+	color:#fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:24px;
+}
+
+
+.card1{
+	transform:translate(-50%,-50%);
+	width:350px;
+	height:350px;
+	background:#99001a;
+	overflow:hidden;
+	margin-left:620px;
+	margin-top:-350px;
+}
+.card1 .imgbx,
+.card1 .deta{
+	width:100%;
+	height:100%;
+	position:absolute;
+	box-sizing:border-box;
+	transition:.5s;
+}
+.card1 .imgbx{
+	top:0;
+	left:0;
+}
+.card1:hover .imgbx{
+	top:0;
+	left:-100%;
+}
+.card1 .imgbx img{
+	width:100%;
+	height:350px;
+}
+.card1 .deta{
+	background:#99001a;
+	top:0;
+	left:100%;
+	padding:15px 20px;
+}
+.card1:hover .deta{
+	top:0;
+	left:0;
+}
+.card1 .deta h1{
+	color:#fff;
+	text-align:center;
+	margin:0;
+	padding:0 0 5px;
+	border-bottom:2px solid #fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:30px;
+}
+.card1 .deta p{
+	margin:20px 0 0;
+	color:#fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:24px;
+}
+
+.card2{
+	transform:translate(-50%,-50%);
+	width:350px;
+	height:350px;
+	background:#99001a;
+	overflow:hidden;
+	margin-left:985px;
+	margin-top:-350px;
+}
+.card2 .imgbx,
+.card2 .deta{
+	width:100%;
+	height:100%;
+	position:absolute;
+	box-sizing:border-box;
+	transition:.5s;
+}
+.card2 .imgbx{
+	top:0;
+	left:0;
+}
+.card2:hover .imgbx{
+	top:0;
+	left:-100%;
+}
+.card2 .imgbx img{
+	width:100%;
+	height:350px;
+}
+.card2 .deta{
+	background:#99001a;
+	top:0;
+	left:100%;
+	padding:15px 20px;
+}
+.card2:hover .deta{
+	top:0;
+	left:0;
+}
+.card2 .deta h1{
+	color:#fff;
+	text-align:center;
+	margin:0;
+	padding:0 0 5px;
+	border-bottom:2px solid #fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:30px;
+}
+.card2 .deta p{
+	margin:20px 0 0;
+	color:#fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:30px;
+}
+
+
+.card3{	
+	transform:translate(-50%,-50%);
+	width:350px;
+	height:350px;
+	background:#99001a;
+	overflow:hidden;
+	margin-left:255px;
+	margin-top:30px;
+}
+.card3 .imgbx,
+.card3 .deta{
+	width:100%;
+	height:100%;
+	position:absolute;
+	box-sizing:border-box;
+	transition:.5s;
+}
+.card3 .imgbx{
+	top:0;
+	left:0;
+}
+.card3:hover .imgbx{
+	top:0;
+	left:-100%;
+}
+.card3 .imgbx img{
+	width:100%;
+	height:350px;
+}
+.card3 .deta{
+	background:#99001a;
+	top:0;
+	left:100%;
+	padding:15px 20px;
+}
+.card3:hover .deta{
+	top:0;
+	left:0;
+}
+.card3 .deta h1{
+	color:#fff;
+	text-align:center;
+	margin:0;
+	padding:0 0 5px;
+	border-bottom:2px solid #fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:28px;
+}
+.card3 .deta p{
+	margin:20px 0 0;
+	color:#fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:25px;
+}
+
+.card4{
+	transform:translate(-50%,-50%);
+	width:350px;
+	height:350px;
+	background:#99001a;
+	overflow:hidden;
+	margin-left:620px;
+	margin-top:-350px;
+}
+.card4 .imgbx,
+.card4 .deta{
+	width:100%;
+	height:100%;
+	position:absolute;
+	box-sizing:border-box;
+	transition:.5s;
+}
+.card4 .imgbx{
+	top:0;
+	left:0;
+}
+.card4:hover .imgbx{
+	top:0;
+	left:-100%;
+}
+.card4 .imgbx img{
+	width:100%;
+	height:350px;
+}
+.card4 .deta{
+	background:#99001a;
+	top:0;
+	left:100%;
+	padding:15px 20px;
+}
+.card4:hover .deta{
+	top:0;
+	left:0;
+}
+.card4 .deta h1{
+	color:#fff;
+	text-align:center;
+	margin:0;
+	padding:0 0 5px;
+	border-bottom:2px solid #fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:30px;
+}
+.card4 .deta p{
+	margin:20px 0 0;
+	color:#fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:24px;
+}
+
+.card5{
+	transform:translate(-50%,-50%);
+	width:350px;
+	height:350px;
+	background:#99001a;
+	overflow:hidden;
+	margin-left:985px;
+	margin-top:-350px;
+}
+.card5 .imgbx,
+.card5 .deta{
+	width:100%;
+	height:100%;
+	position:absolute;
+	box-sizing:border-box;
+	transition:.5s;
+}
+.card5 .imgbx{
+	top:0;
+	left:0;
+}
+.card5:hover .imgbx{
+	top:0;
+	left:-100%;
+}
+.card5 .imgbx img{
+	width:100%;
+	height:350px;
+}
+.card5 .deta{
+	background:#99001a;
+	top:0;
+	left:100%;
+	padding:15px 20px;
+}
+.card5:hover .deta{
+	top:0;
+	left:0;
+}
+.card5 .deta h1{
+	color:#fff;
+	text-align:center;
+	margin:0;
+	padding:0 0 5px;
+	border-bottom:2px solid #fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:30px;
+}
+.card5 .deta p{
+	margin:20px 0 0;
+	color:#fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:30px;
+}
+
+.card6{
+	transform:translate(-50%,-50%);
+	width:350px;
+	height:350px;
+	background:#99001a;
+	overflow:hidden;
+	margin-left:255px;
+	margin-top:30px;
+}
+.card .imgbx,
+.card6 .deta{
+	width:100%;
+	height:100%;
+	position:absolute;
+	box-sizing:border-box;
+	transition:.5s;
+}
+.card6 .imgbx{
+	top:0;
+	left:0;
+}
+.card6:hover .imgbx{
+	top:0;
+	left:-100%;
+}
+.card6 .imgbx img{
+	width:100%;
+	height:350px;
+}
+.card6 .deta{
+	background:#99001a;
+	top:0;
+	left:100%;
+	padding:15px 20px;
+}
+.card6:hover .deta{
+	top:0;
+	left:0;
+}
+.card6 .deta h1{
+	color:#fff;
+	text-align:center;
+	margin:0;
+	padding:0 0 5px;
+	border-bottom:2px solid #fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:28px;
+}
+.card6 .deta p{
+	margin:20px 0 0;
+	color:#fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:28px;
+}
+
+.card7{
+	transform:translate(-50%,-50%);
+	width:350px;
+	height:350px;
+	background:#99001a;
+	overflow:hidden;
+	margin-left:620px;
+	margin-top:-350px;
+}
+.card7 .imgbx,
+.card7 .deta{
+	width:100%;
+	height:100%;
+	position:absolute;
+	box-sizing:border-box;
+	transition:.5s;
+}
+.card7 .imgbx{
+	top:0;
+	left:0;
+}
+.card7:hover .imgbx{
+	top:0;
+	left:-100%;
+}
+.card7 .imgbx img{
+	width:100%;
+	height:350px;
+}
+.card7 .deta{
+	background:#99001a;
+	top:0;
+	left:100%;
+	padding:15px 20px;
+}
+.card7:hover .deta{
+	top:0;
+	left:0;
+}
+.card7 .deta h1{
+	color:#fff;
+	text-align:center;
+	margin:0;
+	padding:0 0 5px;
+	border-bottom:2px solid #fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:30px;
+}
+.card7 .deta p{
+	margin:20px 0 0;
+	color:#fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:28px;
+}
+
+.card8{
+	transform:translate(-50%,-50%);
+	width:350px;
+	height:350px;
+	background:#99001a;
+	overflow:hidden;
+	margin-left:985px;
+	margin-top:-350px;
+}
+.card8 .imgbx,
+.card8 .deta{
+	width:100%;
+	height:100%;
+	position:absolute;
+	box-sizing:border-box;
+	transition:.5s;
+}
+.card8 .imgbx{
+	top:0;
+	left:0;
+}
+.card8:hover .imgbx{
+	top:0;
+	left:-100%;
+}
+.card8 .imgbx img{
+	width:100%;
+	height:350px;
+}
+.card8 .deta{
+	background:#99001a;
+	top:0;
+	left:100%;
+	padding:15px 20px;
+}
+.card8:hover .deta{
+	top:0;
+	left:0;
+}
+.card8 .deta h1{
+	color:#fff;
+	text-align:center;
+	margin:0;
+	padding:0 0 5px;
+	border-bottom:2px solid #fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:28px;
+}
+.card8 .deta p{
+	margin:20px 0 0;
+	color:#fff;
+	font-family:"Comic Sans MS", cursive;
+	font-size:25px;
+}	   
+
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+   <div class="header">
+      <div class="container">
+         <div class="logo">
+         <a class="b1" href="../index.html"><img src="../images/logo.png"  /></a> 
+         <span style="font-size:48px; font-family:'Comic Sans MS', cursive; color:#fff; text-decoration:none;"> 
+         <i>Shale Pizzazzz</i></span>
+         </div>
+    </div>
+      </div>
+      
+<div class="nav">
+    <div class="box1">
+    <ul>
+       <i><li><a id="active" href="../index.html">Home</a></li>
+       <li><a href="#">Menu</a>
+            <ul>
+               <li><a href="Pizza.html">Pizza</a></li>
+               <li><a href="Garlicbread.html">Garlic Breads</a></li>
+               <li><a href="PizzaSandwich.html">Pizza Sandwiches</a></li>
+               <li><a href="Dessert.html">Dessertes</a></li>
+               <li><a href="Bevreages.html">Beverages</a></li>
+            </ul>
+       </li>
+       <li><a href="MenuDown.html">Menu Download</a></li>
+       <li><a href="Storelocat.html">Store Location</a></li>
+       <li><a href="location.html">Locations</a></li>
+       <li><a href="ContactUs.html">Contact Us</a></li>
+       <li><a href="Feedback.html">Feedback</a></li>
+       <li><a href="franchinfo.html">Franchise Info</a></li>
+       <li><a href="Gallery.html">Gallery</a></li></i>
+    </ul>
+</div>
+
+<div class="truck">    
+   <div class="imagebox">
+      <img src="../images/S image.jpg" style="height:510px;">
+      <div class="textbox">
+      <h1><i style="font-size:50px; font-family:'Comic Sans MS', cursive;">Pizza Sandwiches</h1></i>
+      </div>    
+   </div>
+</div>
+
+
+
+
+<div class="card">
+   <div class="imgbx">
+      <img src="../images/S image 1.jpg">
+   </div>
+   <div class="deta">
+      <h1>PEPPERONI GRILLED SANDWICH</h1>
+      <p>Toasted Grilled with extra cheese & Capsicum Taste inside</p>
+      <h2 style="color:#fff;">$30.00</h2>
+   </div>       
+</div>            
+       
+ 
+<div class="card1">
+   <div class="imgbx">
+      <img src="../images/S image 2.jpg">
+   </div>
+   <div class="deta">
+      <h1>PASTRAMI SANDWICH</h1>
+      <p>Grilled with some new Flavours.</p>
+      <h2 style="color:#fff;">$25.00</h2>
+   </div>       
+</div>
+    
+    
+<div class="card2">
+   <div class="imgbx">
+      <img src="../images/S image 3.jpg">
+   </div>
+   <div class="deta">
+      <h1>BOLOGNA SANDWICH</h1>
+      <p>Simple Sandwich With Tomato & Salad Leaves</p>
+      <h2 style="color:#fff;">$20.00</h2>
+   </div>       
+</div>    
+    
+    
+<div class="card3">
+   <div class="imgbx">
+      <img src="../images/S image 4.png">
+   </div>
+   <div class="deta">
+      <h1>GRILLED CHEESE SANDWICH</h1>
+      <p>Chesse sandwich With Tomatos & Salad Leaves.</p>
+      <h2 style="color:#fff;">$40.00</h2>
+   </div>       
+</div>    
+
+    
+<div class="card4">
+   <div class="imgbx">
+      <img src="../images/S image 5.jpg">
+   </div>
+   <div class="deta">
+      <h1>CHICKEN CAESAR SANDWICH</h1>
+      <p>New Flavour With New Taste of Chesse & Garlic Bread.</p>
+      <h2 style="color:#fff;">$30.00</h2>
+   </div>       
+</div>    
+    
+    
+<div class="card5">
+   <div class="imgbx">
+      <img src="../images/S image 6.jpg">
+   </div>
+   <div class="deta">
+      <h1>TURKEY SANDWICH</h1>
+      <p>Bunch of a Chesse, Onion & Tomato..</p>
+      <h2 style="color:#fff;">$30.00</h2>
+   </div>       
+</div>    
+
+
+<div class="card6">
+   <div class="imgbx">
+      <img src="../images/S image 7.jpg">
+   </div>
+   <div class="deta">
+      <h1>GRILLED DONUT SANDWICH</h1>
+      <p>New Sandwich Donut With Cheese</p>
+      <h2 style="color:#fff;">$30.00</h2>
+   </div>       
+</div>     
+        
+    
+<div class="card7">
+   <div class="imgbx">
+      <img src="../images/S image 8.jpg">
+   </div>
+   <div class="deta">
+      <h1>CHEESE CLUB SANDWICH</h1>
+      <p>Club Sandwich with Tomatos Topping.</p>
+      <h2 style="color:#fff;">$30.00</h2>
+   </div>       
+</div>     
+    
+<div class="card8">
+   <div class="imgbx">
+      <img src="../images/S image 9.jpg">
+   </div>
+   <div class="deta">
+      <h1>GRILLED EGGPLANT SANDWICH</h1>
+      <p>Biggest Sandwich Of our menu with some new egg filled & cheese topping</p>
+      <h2 style="color:#fff;">$30.00</h2>
+   </div>       
+</div>     
+
+<div class="footer" style="margin-top:-10%;">
+     <div class="fobox1">
+          <div class="ffbox">
+              <i class="fa fa-facebook-square" style="font-size:34px;color:#fff;"></i>
+              <i class="fa fa-twitter-square" style="font-size:34px;color:#fff;"></i>
+              <i class="fa fa-google-plus-square" style="font-size:34px;color:#fff;"></i>
+          </div>   
+     </div>
+         
+     <div class="fobox2">
+          <center>
+          <br />
+          <a href="MenuDown.html" class="but1" style="text-decoration:none">Menu Download</a>
+          <a href="Storelocat.html" class="but1" style="text-decoration:none">Store Location </a>
+          <a href="location.html" class="but1" style="text-decoration:none"> Location </a>
+          <a href="ContactUs.html" class="but1" style="text-decoration:none">Contact Us </a>
+          <a href="Feedback.html" class="but1" style="text-decoration:none">Feed Back</a>
+          <a href="franchinfo.html" class="but1" style="text-decoration:none">Franchise Info</a>
+          </center>
+     </div>
+     
+     <div class="fobox3">
+          <center>
+          <i><p style="color:#fff;">&copy; 2018 Shale Pizzazzz Pakistan.<br />
+          All Right Reserved.</p></i>
+          </center>
+     </div>           
+</div>     
+
+
+
+
+
+</div>
+</body>
+</html>

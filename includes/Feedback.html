@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shale Pizzazzz</title>
+<link rel="stylesheet" href="../css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+*{
+	box-sizing:border-box;
+}
+.maain{
+	width:500px;
+	margin:50px auto;
+	border:3px solid #99001a;
+	border-radius:10px;
+	background-color:#fff;
+	border-left:40px solid #99001a;
+	font-family:"Comic Sans MS", cursive;
+}
+.info{
+	width:100%;
+	padding:8px;
+	background-color:#99001a;
+	font-size:20px;
+	font-weight:bold;
+	font-family:"Comic Sans MS", cursive;
+	text-align:center;
+	color:#fff;
+	text-shadow:1px 1px 2px #fff;
+}
+.formbox{
+	padding:25px;
+}
+lable{
+	color:#99001a;
+	font-size:20px;
+}
+.inp, #msg-box{
+	width:100%;
+	padding:10px;
+	margin-bottom:5px;
+	margin-top:3px;
+	border:2px solid #000;
+	border-radius:5px;
+	font-weight:bold;
+	font-family:"Comic Sans MS", cursive;
+	border-right:20px solid #99001a;
+	border-left:20px solid #99001a;	
+}
+.inp:focus, #msg-box:focus{
+	outline:none;
+	border-right:20px solid #000;
+	border-left:20px solid #000;
+}
+#msg-box{
+	resize:none;
+	height:80px;
+}
+.sub-btn{
+	width:100%;
+	padding:10px;
+	margin-top:5px;
+	border:none;
+	border-radius:5px;
+	background:linear-gradient(#99001a, #800000);
+	color:#fff;
+	font-size:20px;
+	font-family:"Comic Sans MS", cursive;
+	cursor:pointer;
+}
+.sub-btn:focus{
+	outline:none;
+}
+.sub-btn:hover{
+	background:linear-gradient(#800000, #99001a);
+	transition:all ease-out 0.2s;
+	opacity:0.9;
+	filter:alpha(opacity=10);
+}
+@media(max-width:720px){
+	.main{
+		width:90%;
+	}
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="wrapper" style="height:1000px;">
+   <div class="header">
+      <div class="container">
+         <div class="logo">
+         <a class="b1" href="../index.html"><img src="../images/logo.png"  /></a> 
+         <span style="font-size:48px; font-family:'Comic Sans MS', cursive; color:#fff; text-decoration:none;"> 
+         <i>Shale Pizzazzz</i></span>
+         </div>
+    </div>
+      </div>
+      
+<div class="nav">
+    <div class="box1">
+    <ul>
+       <i><li><a id="active" href="../index.html">Home</a></li>
+       <li><a href="#">Menu</a>
+            <ul>
+               <li><a href="Pizza.html">Pizza</a></li>
+               <li><a href="Garlicbread.html">Garlic Breads</a></li>
+               <li><a href="PizzaSandwich.html">Pizza Sandwiches</a></li>
+               <li><a href="Dessert.html">Dessertes</a></li>
+               <li><a href="Bevreages.html">Beverages</a></li>
+            </ul>
+       </li>
+       <li><a href="MenuDown.html">Menu Download</a></li>
+       <li><a href="Storelocat.html">Store Location</a></li>
+       <li><a href="location.html">Locations</a></li>
+       <li><a href="ContactUs.html">Contact Us</a></li>
+       <li><a href="Feedback.html">Feedback</a></li>
+       <li><a href="franchinfo.html">Franchies Info</a></li>
+       <li><a href="Gallery.html">Gallery</a></li>
+       <li><a href="Order.html">Order</a></li>
+     </i>
+    </ul>
+    </div>
+</div>
+
+
+<div class="maain">
+    <div class="info">Give Your Feedback!</div>
+    <form action="#" method="post" name="form" class="formbox">
+         <label for="name">Name</label><br>
+         <input type="text" name="name" class="inp" placeholder="Enter Your Name" required><br>
+         <label for="email">Email ID</label><br>
+         <input type="email" name="email" class="inp" placeholder="Enter Your Name" required><br>
+         <label for="phone">Phone</label><br>
+         <input type="tel" name="phone" class="inp" placeholder="Enter Your Number" required<br>
+         <label for="message">Message</label><br>
+         <textarea name="msg" id="msg-box" placeholder="Enter Your Message Here..."></textarea><br>
+         <input type="submit" name="submit" value="Send" class="sub-btn">
+    </form>
+</div>    
+
+<div class="footer" style="margin-top:15%;">
+     <div class="fobox1">
+          <div class="ffbox">
+              <i class="fa fa-facebook-square" style="font-size:34px;color:#fff;"></i>
+              <i class="fa fa-twitter-square" style="font-size:34px;color:#fff;"></i>
+              <i class="fa fa-google-plus-square" style="font-size:34px;color:#fff;"></i>
+          </div>   
+     </div>
+         
+     <div class="fobox2">
+          <center>
+          <br />
+          <a href="MenuDown.html" class="but1" style="text-decoration:none">Menu Download</a>
+          <a href="Storelocat.html" class="but1" style="text-decoration:none">Store Location </a>
+          <a href="location.html" class="but1" style="text-decoration:none"> Location </a>
+          <a href="ContactUs.html" class="but1" style="text-decoration:none">Contact Us </a>
+          <a href="Feedback.html" class="but1" style="text-decoration:none">Feed Back</a>
+          <a href="franchinfo.html" class="but1" style="text-decoration:none">Franchise Info</a>
+          </center>
+     </div>
+     
+     <div class="fobox3">
+          <center>
+          <i><p style="color:#fff;">&copy; 2018 Shale Pizzazzz Pakistan.<br />
+           All Right Reserved. </p></i>
+          </center>
+     </div>           
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
